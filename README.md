@@ -1,68 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexander Brower</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+# Personal Website — Alexander Brower
 
-<body>
-  <header>
-    <h1>Alexander Brower</h1>
-    <p>Mathematician · Musician · Researcher</p>
-  </header>
+This repository contains the source code for my personal academic website, hosted via **GitHub Pages** and linked to my custom domain.
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#music">Music</a>
-    <a href="#contact">Contact</a>
-  </nav>
+The site includes pages on:
+- **Research** — current work, publications, and interests  
+- **Teaching** — courses taught and teaching philosophy  
+- **CV** — downloadable academic CV  
+- **Contact** — email and professional links  
 
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I'm a mathematician and musician interested in the connections between
-        control theory, dynamical systems, and musical structure. I compose indie/funky
-        pieces with video game–style textures and explore the math behind sound.
-      </p>
-    </section>
+## 🔗 Live Site
+Visit the website at: [https://alexanderbrower.github.io](https://alexanderbrower.github.io)  
+(or using my custom domain: [alexanderbrower.com](https://alexanderbrower.com))
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Boundary Control for Optimal Data Exchange</strong> — 
-          a study of PDE-driven communication systems.
-        </li>
-        <li><strong>Switching Systems in Network Dynamics</strong> — 
-          exploring stability and optimality in hybrid systems.
-        </li>
-      </ul>
-    </section>
+## ⚙️ Deployment
+The site is automatically published from the `main` branch using **GitHub Pages**.  
+All HTML, CSS, and image files are located in the root directory.
 
-    <section id="music">
-      <h2>Music</h2>
-      <p>
-        I write and perform original music blending mathematical structure
-        with groove. My guitar work draws from funk, indie, and ambient textures.
-      </p>
-      <p>
-        🎧 <a href="#">Listen on SoundCloud</a> or 
-        🎸 <a href="#">View guitar tabs</a>
-      </p>
-    </section>
+To update:
+1. Edit or add files directly in this repository.  
+2. Commit and push your changes.  
+3. GitHub Pages will rebuild the site automatically within a minute or two.
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:alexander@example.com">alexander@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-    </section>
-  </main>
+## 🧠 About
+I'm a mathematics graduate student with research interests in **optimal control, PDEs, and network dynamics**.  
+Outside of math, I compose and perform music that blends **indie, funk, and video-game-inspired** sounds.
 
-  <footer>
-    <p>© 2025 Alexander Brower · Built with HTML & CSS</p>
-  </footer>
-</body>
-</html>
+---
+
+© 2025 Alexander Brower. All rights reserved.
