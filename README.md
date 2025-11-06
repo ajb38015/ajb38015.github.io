@@ -9,8 +9,8 @@ The site includes pages on:
 - **Contact** — email and professional links  
 
 ## 🔗 Live Site
-Visit the website at: [https://alexanderbrower.github.io](https://alexanderbrower.github.io)  
-(or using my custom domain: [alexanderbrower.com](https://alexanderbrower.com))
+Visit the website at: [https://ajb38015.github.io](https://ajb38015.github.io)  
+(or using my custom domain: [alexbrowermath.com](alexbrowermath.com))
 
 ## ⚙️ Deployment
 The site is automatically published from the `main` branch using **GitHub Pages**.  
