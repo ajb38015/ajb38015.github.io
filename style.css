@@ -86,3 +86,15 @@ footer {
   padding-top: 20px;
   text-align: center;
 }
+
+.portrait {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #34d399; /* green border */
+  box-shadow: 0 0 10px rgba(52, 211, 153, 0.3);
+}
