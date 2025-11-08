@@ -116,7 +116,7 @@ p {
 /* === IMAGE / PORTRAIT === */
 .portrait {
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 40px;
   width: 250px;
   height: 250px;
