@@ -44,7 +44,7 @@ h2, h3 {
 }
 
 .nav a:hover {
-  color: #6ee7b7;
+  color: #538772;
 }
 
 .section {
@@ -75,7 +75,7 @@ h2, h3 {
   margin: 4px;
   font-size: 0.9rem;
   background: #1f2937;
-  color: #a7f3d0; /* mint green text */
+  color: #577a6a; /* mint green text */
 }
 
 footer {
