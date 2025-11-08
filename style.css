@@ -1,91 +1,150 @@
-/* style.css — dark teal academic theme */
+/* === GLOBAL STYLES === */
+:root {
+  --bg-dark: #16291c;         /* deep forest green background */
+  --bg-light: #1f3a27;        /* lighter green sections */
+  --accent-green: #5bf59d;    /* mint green highlight */
+  --accent-blue: #b0b8ff;     /* soft lavender-blue for links/titles */
+  --text-main: #e6ede6;       /* main text color (off-white) */
+  --text-muted: #aab5a9;      /* softer secondary text */
+  --card-bg: #111c14;         /* project/box background */
+}
 
+/* === BASE === */
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #1b351d; /* slightly lighter navy */
-  color: #e5e7eb; /* light gray text */
   margin: 0;
-  padding: 40px;
-  line-height: 1.7;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
 }
 
 a {
-  color: #4d6e60; /* soft green */
+  color: var(--accent-blue);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.3s;
 }
 
 a:hover {
-  color: #618974; /* bluish hover */
+  color: var(--accent-green);
 }
 
-h1 {
-  font-size: 2.7rem;
-  font-weight: 800;
-  background: linear-gradient(90deg, #34d399, #60a5fa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
+/* === HEADER === */
+header {
+  background-color: var(--bg-light);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: var(--accent-green);
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--accent-green);
+}
+
+/* === MAIN CONTENT === */
+main {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
 }
 
 h2, h3 {
-  color: #a5b4fc;
-  font-weight: 500;
+  color: var(--accent-green);
+  margin-top: 1.5rem;
 }
 
-.nav {
-  margin-bottom: 40px;
+p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
 }
 
-.nav a {
-  margin-right: 24px;
-  color: #d1d5db;
-  font-weight: 500;
-}
-
-.nav a:hover {
-  color: #538772;
-}
-
-.section {
-  margin-top: 40px;
-}
-
+/* === CARDS / PROJECT BLOCKS === */
 .card {
-  border: 1px solid #090e18;
-  border-radius: 16px;
-  padding: 20px;
-  background: #090e18;
-  margin: 15px 0;
-  box-shadow: 0 2px 8px rgba(52, 211, 153, 0.05);
-  transition: transform 0.2s, background 0.2s, box-shadow 0.3s;
+  background-color: var(--card-bg);
+  border-radius: 18px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border: 1px solid rgba(91, 245, 157, 0.2);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-  background: #223046;
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(52, 211, 153, 0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-.tag {
-  display: inline-block;
-  border: 1px solid #334155;
-  border-radius: 9999px;
-  padding: 4px 12px;
-  margin: 4px;
-  font-size: 0.9rem;
-  background: #1f2937;
-  color: #577a6a; /* mint green text */
+.card-title {
+  color: var(--accent-blue);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
 }
 
+.card-subtitle {
+  color: var(--text-main);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* === IMAGE / PORTRAIT === */
+.portrait {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent-green);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+/* === LISTS === */
+ul {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  color: var(--text-main);
+}
+
+li {
+  margin: 0.3rem 0;
+}
+
+/* === FOOTER === */
 footer {
-  margin-top: 60px;
-  font-size: 0.85rem;
-  color: #9ca3af;
-  border-top: 1px solid #1f2937;
-  padding-top: 20px;
   text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 
 .portrait {
   position: absolute;
