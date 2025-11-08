@@ -1,23 +1,23 @@
 /* === GLOBAL STYLES === */
 :root {
-  --bg-dark: #16291c;         /* deep forest green background */
-  --bg-light: #1f3a27;        /* lighter green sections */
-  --accent-green: #5bf59d;    /* mint green highlight */
-  --accent-blue: #b0b8ff;     /* soft lavender-blue for links/titles */
-  --text-main: #e6ede6;       /* main text color (off-white) */
-  --text-muted: #aab5a9;      /* softer secondary text */
-  --card-bg: #111c14;         /* project/box background */
+  --bg-dark: #16291c;
+  --bg-light: #1f3a27;
+  --accent-green: #5bf59d;
+  --accent-blue: #b0b8ff;
+  --text-main: #e6ede6;
+  --text-muted: #aab5a9;
+  --card-bg: #111c14;
 }
-
 
 /* === BASE === */
 body {
   margin: 0;
-  padding: 2rem; 
+  padding: 2rem;
   font-family: "Inter", "Helvetica Neue", sans-serif;
   background-color: var(--bg-dark);
   color: var(--text-main);
   line-height: 1.6;
+  box-sizing: border-box;
 }
 
 a {
@@ -25,7 +25,6 @@ a {
   text-decoration: none;
   transition: color 0.3s;
 }
-
 a:hover {
   color: var(--accent-green);
 }
@@ -41,6 +40,7 @@ header {
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
 }
 
 header h1 {
@@ -57,12 +57,10 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-
 nav a {
   color: var(--text-main);
   font-weight: 600;
 }
-
 nav a:hover {
   color: var(--accent-green);
 }
@@ -94,19 +92,16 @@ p {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
-
 .card-title {
   color: var(--accent-blue);
   font-weight: 700;
   font-size: 1.2rem;
   margin-bottom: 0.4rem;
 }
-
 .card-subtitle {
   color: var(--text-main);
   font-weight: 600;
@@ -133,7 +128,6 @@ ul {
   margin-left: 1.5rem;
   color: var(--text-main);
 }
-
 li {
   margin: 0.3rem 0;
 }
@@ -147,3 +141,66 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .portrait {
+    position: static;
+    display: block;
+    margin: 1.5rem auto;
+    width: 180px;
+    height: 180px;
+  }
+
+  main {
+    margin: 1rem auto;
+    padding: 0 0.5rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  .portrait {
+    width: 140px;
+    height: 140px;
+  }
+}
