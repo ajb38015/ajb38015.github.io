@@ -95,6 +95,12 @@ footer {
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #34d399; /* green border */
+  border: 2px solid #34d399; /* green accent */
   box-shadow: 0 0 10px rgba(52, 211, 153, 0.3);
+}
+
+/* Ensure this overrides any global img rules */
+img.portrait {
+  width: 120px !important;
+  height: 120px !important;
 }
