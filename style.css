@@ -101,6 +101,6 @@ footer {
 
 /* Ensure this overrides any global img rules */
 img.portrait {
-  width: 120px !important;
-  height: 120px !important;
+  width: 500px !important;
+  height: 500px !important;
 }
