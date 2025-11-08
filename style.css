@@ -9,9 +9,11 @@
   --card-bg: #111c14;         /* project/box background */
 }
 
+
 /* === BASE === */
 body {
   margin: 0;
+  padding: 2rem
   font-family: "Inter", "Helvetica Neue", sans-serif;
   background-color: var(--bg-dark);
   color: var(--text-main);
